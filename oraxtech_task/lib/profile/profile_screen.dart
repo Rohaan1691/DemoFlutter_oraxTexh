@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:oraxtechtask/profile/widgets/appbar.dart';
@@ -19,21 +20,6 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
 
-
-  var dialogBox = new CupertinoAlertDialog(
-    title: new Text("Dialog Title"),
-    content: new Text("This is my content"),
-    actions: <Widget>[
-      CupertinoDialogAction(
-        isDefaultAction: true,
-        child: Text("Yes"),
-      ),
-      CupertinoDialogAction(
-        child: Text("No"),
-      )
-    ],
-  );
-
   var gridView = GridView.builder(
       itemCount: Images.imageThumbUrls.length,
       shrinkWrap: true,
@@ -49,7 +35,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
       child: const CircularProgressIndicator(),
     );
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +68,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ],
             ),
-          ),
+          )
+
         ),
       ),
     );
