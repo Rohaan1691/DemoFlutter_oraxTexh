@@ -1,21 +1,6 @@
 
 import 'dart:convert';
 
-//class ProfileModel {
-//
-//  String name;
-//  String image;
-//
-//  ProfileModel({this.name,this.image});
-//
-//  // Return object from JSON //
-//  factory ProfileModel.fromJson(Map<String, dynamic> json) {
-//    return ProfileModel(
-//      name: json['body'] as String,
-//      image: json['body'] as String,
-//    );
-//  }
-//}
 
 
 class ProfileModel {
